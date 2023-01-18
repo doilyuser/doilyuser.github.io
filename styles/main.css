@@ -73,22 +73,19 @@ img {
   background: #000000;
   color: #FFFFFF;
   font-size: var(--font-size-sm);
-  min-width: 400px;
+  min-width: 450px;
 }
 
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0px 40px;
-  
+  margin: 0px 20px;
 }
 
 .logo {
   max-width: 5rem;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   margin: 10px 0px;
 }
 
@@ -106,7 +103,7 @@ img {
 .bg-image {
   position: absolute;
   z-index: -1;
-  min-width: 400px;
+  min-width: 450px;
   min-height: 50rem;
 }
 
