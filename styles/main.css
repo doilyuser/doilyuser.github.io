@@ -1,0 +1,95 @@
+:root {
+  --dark-color: #000000;
+  --light-color: #FFFFFF;
+  --light-color-alt: #F5E3CB;
+  --green-color: #84BE84;
+  --pink-color: #C680B8;
+  --yellow-color: #F7CF60;
+  --blue-color: #93DEDA;
+  --alt-blue-color: #90C5FB;
+  --font-size-xs: 1.2rem;
+  --font-size-sm: 1.6rem;
+  --font-size-md: 2.4rem;
+  --font-size-lg: 3rem;
+  --font-size-xl: 4rem;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  .title {display: none;}
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Libre Baskerville', serif;
+  font-size: var(--font-size-sm);
+  background-color: var(--light-color);
+  letter-spacing: 1px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.header {
+  background: #000000;
+  color: #FFFFFF;
+  font-size: var(--font-size-sm);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 40px;
+  
+}
+
+.logo {
+  max-width: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0px;
+}
+
+
+.title {
+  margin-left: 10px;
+}
+
+.list,
+.list-item {
+  display: inline-block;
+  list-style: none;
+}
