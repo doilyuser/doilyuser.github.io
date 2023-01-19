@@ -98,6 +98,7 @@ img {
 
 .title {
   margin-left: 10px;
+  back
 }
 
 .list
@@ -123,10 +124,35 @@ img {
   height: 20vh; 
 }
 
-/* .banner {
-  background-image: url(/images/bg-image.png);
+.article-title {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.banner {
+  width: 80vw;
+  height: 35vh;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.top-left {
   color: #FFFFFF;
-} */
+  position: absolute;
+  top: 140px;
+  left: 170px;
+  padding: 0 140px;
+}
+
+.bottom-left {
+  color: #FFFFFF;
+  position: absolute;
+  top: 310px;
+  left: 170px;
+}
 
 #blog {
   display: flex;
