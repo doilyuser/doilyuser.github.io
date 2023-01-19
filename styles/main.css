@@ -1,17 +1,9 @@
 :root {
-  --dark-color: #000000;
-  --light-color: #FFFFFF;
-  --light-color-alt: #F5E3CB;
-  --green-color: #84BE84;
-  --pink-color: #C680B8;
-  --yellow-color: #F7CF60;
-  --blue-color: #93DEDA;
-  --alt-blue-color: #90C5FB;
-  --font-size-xs: 1.2rem;
-  --font-size-sm: 1.6rem;
-  --font-size-md: 2.4rem;
-  --font-size-lg: 3rem;
-  --font-size-xl: 4rem;
+  --font-size-xs: 1.6rem; 
+  --font-size-sm: 2.4rem;
+  --font-size-md: 3rem;
+  --font-size-lg: 4rem;
+  --font-size-xl: 5rem;
 }
 
 @media (max-width: 1250px) {
@@ -36,7 +28,7 @@
     width: 100%;
   }
   #blog {
-    padding: 20px;
+    padding: 25px;
   }
 }
 
@@ -52,8 +44,8 @@ html {
 
 body {
   font-family: 'Libre Baskerville', serif;
-  font-size: var(--font-size-sm);
-  background-color: var(--light-color);
+  font-size: var(--font-size-xs);
+  background-color: #FFFFFF;
   letter-spacing: 1px;
 }
 
@@ -64,7 +56,7 @@ a {
 
 img {
   max-width: 100%;
-  display: block;
+  /* display: block; */
 }
 
 .header {
@@ -72,7 +64,7 @@ img {
   top: 0px;
   background: #000000;
   color: #FFFFFF;
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-xs);
   min-width: 450px;
 }
 
@@ -80,7 +72,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0px 20px;
+  margin: 0px 30px;
 }
 
 .logo {
@@ -109,11 +101,9 @@ img {
 
 #blog {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: flex-start;
   flex-direction: column;
-  padding: -400px;
-  border-bottom: 1px solid #000000;
 }
 
 .blog-heading {
@@ -122,17 +112,12 @@ img {
   justify-content: flex-start;
   align-items: left;
   flex-direction: inherit;
-}
-
-.blog-heading 
-span {
   color: #FFFFFF;
 }
 
 .blog-heading 
 h3 {
-  font-size: var(--font-size-xl);
-  color: #FFFFFF;
+  font-size: var(--font-size-lg);
 }
 
 #blog-hero {
@@ -143,7 +128,6 @@ h3 {
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  
   margin: 20px;
 }
 
@@ -205,15 +189,13 @@ img {
 
 .blog-text 
 span {
-  /* color: #FFFFFF; */
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-xs);
 }
 
 .blog-text 
 .blog-title {
-  font-size: var(--font-size-md);
+  font-size: var(--font-size-sm);
   font-weight: 600;
-  /* color: #000000; */
 }
 
 .blog-text 
@@ -222,7 +204,6 @@ span {
 }
 
 .blog-text p {
-  /* color: #C680B8; */
   font-size: var(--font-size-xs);
   display: -webkit-box;
   -webkit-line-clamp: 3;
