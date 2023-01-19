@@ -99,6 +99,17 @@ img {
   min-height: 50rem;
 }
 
+.bg-image-blog {
+  position: absolute;
+  top: -500px;
+  z-index: -1;
+  min-width: 450px;
+}
+
+.banner {
+  background-image: url(/images/bg-image.png);
+}
+
 #blog {
   display: flex;
   /* justify-content: center; */
