@@ -10,20 +10,20 @@
   .blog-box {
     width: 300px;
   }  
-  .article-text {
+  /* .article-text {
     margin-left: 190px;
     margin-right: 420px;
-  }
+  } */
 }
 
 @media (max-width:1100px) {
   .blog-box {
     width: 70%;
   }
-  .article-text {
+  /* .article-text {
     margin-left: 100px;
     margin-right: 300px;
-  }
+  } */
 }
 
 @media (max-width: 550px) {
@@ -38,10 +38,10 @@
   #blog {
     padding: 25px;
   }
-  .article-text {
+  /* .article-text {
     margin-left: 1000px;
     margin-right: 100px;
-  }
+  } */
 }
 
 /* Yo you need to fix these margins */
@@ -109,21 +109,15 @@ img {
 .bg-image {
   position: absolute;
   z-index: -1;
+  width: 100vw;
   min-width: 450px;
   min-height: 50rem;
 }
 
-.bg-image-blog {
-  position: absolute;
-  top: -500px;
-  z-index: -1;
-  min-width: 450px;
-}
-
-.banner {
+/* .banner {
   background-image: url(/images/bg-image.png);
   color: #FFFFFF;
-}
+} */
 
 #blog {
   display: flex;
