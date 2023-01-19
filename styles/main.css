@@ -114,6 +114,15 @@ img {
   min-height: 50rem;
 }
 
+.bg-image-article {
+  position: absolute;
+  top: 20px;
+  z-index: -1;
+  width: 100vw;
+  min-width: 450px;
+  height: 20vh; 
+}
+
 /* .banner {
   background-image: url(/images/bg-image.png);
   color: #FFFFFF;
