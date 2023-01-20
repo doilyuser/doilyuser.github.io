@@ -6,46 +6,6 @@
   --font-size-xl: 5rem;
 }
 
-@media (max-width: 1250px) {
-  .blog-box {
-    width: 300px;
-  }  
-  /* .article-text {
-    margin-left: 190px;
-    margin-right: 420px;
-  } */
-}
-
-@media (max-width:1100px) {
-  .blog-box {
-    width: 70%;
-  }
-  /* .article-text {
-    margin-left: 100px;
-    margin-right: 300px;
-  } */
-}
-
-@media (max-width: 550px) {
-  .title {display: none;}
-  [class*="col-"] {
-    width: 100%;
-  }
-  .blog-box {
-    margin: 20px 10px;
-    width: 100%;
-  }
-  #blog {
-    padding: 25px;
-  }
-  /* .article-text {
-    margin-left: 1000px;
-    margin-right: 100px;
-  } */
-}
-
-/* Yo you need to fix these margins */
-
 * {
   margin: 0;
   padding: 0;
@@ -282,4 +242,9 @@ a {
 .blog-text
 a:hover {
   color: #FFFFFF;
+}
+
+@media (max-width: 425px) {
+  .title {display: none;}
+  #blog {padding: 25px;}
 }
