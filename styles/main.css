@@ -18,7 +18,7 @@ html {
 
 body {
   font-family: 'Libre Baskerville', serif;
-  font-size: var(--font-size-xs);
+  font-size: var(--font-size-sm);
   background-color: #FFFFFF;
   letter-spacing: 1px;
 }
@@ -35,22 +35,24 @@ img {
 
 .header {
   position: sticky;
-  top: 0px;
+  top: 0;
   background: #000000;
   color: #FFFFFF;
   font-size: var(--font-size-xs);
-  min-width: 450px;
+  min-width: 415px;
 }
 
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0px 30px;
+  margin-right: 3%;
+  margin-left: 3%;
 }
 
 .logo {
-  max-width: 5rem;
+  width: 5rem;
+  height: 5rem;
   display: flex;
   margin: 10px 0px;
 }
@@ -58,7 +60,6 @@ img {
 
 .title {
   margin-left: 10px;
-  back
 }
 
 .list .list-item {
@@ -70,7 +71,7 @@ img {
   position: absolute;
   z-index: -1;
   width: 100vw;
-  min-width: 450px;
+  min-width: 415px;
   min-height: 50rem;
 }
 
@@ -79,7 +80,7 @@ img {
   top: 20px;
   z-index: -1;
   width: 100vw;
-  min-width: 450px;
+  min-width: 415px;
   height: 20vh; 
 }
 
@@ -230,7 +231,7 @@ img {
 }
 
 .article-text {
-  margin: 150px 0;
+  margin: 100px 0;
 }
 
 .subtitle, 
@@ -252,12 +253,26 @@ img {
   margin-top: 10%;  
 }
 
-@media (max-width: 425px) {
-  .title {display: none;}
-  #blog {padding: 25px;}
-  .article-heading h3 {font-size: var(--font-size-xl);}
+@media (max-width: 320px) {
+  .bg-image .bg-image-article .header {min-width: 320px;}
 }
 
-@media (max-width: 768px) {
-  .paragraph {color: red;}
+@media (max-width: 375px) {
+  .bg-image {min-width: 375px;}
+  .bg-image-article {min-width: 375px;}
+  .header {min-width: 375px;}
 }
+
+@media (max-width: 425px) {
+  .title {display: none;}
+  /* #blog {padding: 25px;} */
+  .article-heading h3 {font-size: var(--font-size-sm);}
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 1440px) {}
+
+@media (max-width: 2560px) {}
+/* 
+Sort out the font size in detail this time */
