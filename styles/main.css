@@ -96,6 +96,10 @@ img {
   margin: auto;
 }
 
+.banner-two {
+  background-image: url(/images/blog-bw-7.jpg);
+}
+
 #blog {
   display: flex;
   align-items: flex-start;
@@ -109,6 +113,10 @@ img {
   align-items: left;
   flex-direction: inherit;
   color: #FFFFFF;
+}
+
+.black {
+  color: #000000 !important;
 }
 
 .article-heading h3 {
