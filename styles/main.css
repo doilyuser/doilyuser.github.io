@@ -171,6 +171,12 @@ img {
   color: #FFFFFF;
 }
 
+.theme-five {
+  background-color: #F0A04D;
+  border: 2px solid #F0A04D;
+  color: #FFFFFF;
+}
+
 .blog-container {
   display: flex;
   justify-content: center;
