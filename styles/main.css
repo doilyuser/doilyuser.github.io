@@ -248,6 +248,14 @@ img {
   margin: 100px 0;
 }
 
+.article-text a {
+  text-decoration: underline;
+}
+
+.article-text a:hover {
+  color: #A8A8A8;
+}
+
 .subtitle, 
 .date,
 .paragraph {
