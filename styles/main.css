@@ -275,6 +275,15 @@ img {
   margin-top: 10%;
 }
 
+.quote {
+  /* margin: 3% 25% 3% 25%; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  margin-top: 10%;
+}
+
 .paragraph-image {
   display: block;
   margin-left: auto;
