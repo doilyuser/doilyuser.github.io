@@ -100,6 +100,14 @@ img {
   background-image: url(/images/blog-bw-7.jpg);
 }
 
+.banner-three {
+  background-image: url(/images/blog-bw-8.jpg);
+}
+
+.banner-four {
+  background-image: url(/images/blog-bw-9.jpg);
+}
+
 #blog {
   display: flex;
   align-items: flex-start;
