@@ -108,6 +108,10 @@ img {
   background-image: url(/images/blog-bw-9.jpg);
 }
 
+.banner-five {
+  background-image: url(/images/blog-bw-10.jpg);
+}
+
 #blog {
   display: flex;
   align-items: flex-start;
