@@ -292,6 +292,18 @@ img {
   margin-top: 10%;
 }
 
+.code {
+  /* margin: 3% 25% 3% 25%; */
+  font-family: monospace;
+  color: #FFFFFF;
+  background-color: #000000;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  margin-top: 10%;
+}
+
 .paragraph-image {
   display: block;
   margin-left: auto;
@@ -316,10 +328,18 @@ img {
   .article-heading h3 {font-size: var(--font-size-sm);}
 }
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+  .code {font-size: var(--font-size-xs);}
+}
 
 @media (max-width: 1440px) {}
 
 @media (max-width: 2560px) {}
-/* 
-Sort out the font size in detail this time */
+
+/* Sort out the font size in detail this time 
+  --font-size-xs: 1.6rem; 
+  --font-size-sm: 2.4rem;
+  --font-size-md: 3rem;
+  --font-size-lg: 4rem;
+  --font-size-xl: 5rem;
+*/
