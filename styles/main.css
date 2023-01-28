@@ -112,6 +112,10 @@ img {
   background-image: url(/images/blog-bw-10.jpg);
 }
 
+.banner-six {
+  background-image: url(/images/blog-bw-11.jpg);
+}
+
 #blog {
   display: flex;
   align-items: flex-start;
