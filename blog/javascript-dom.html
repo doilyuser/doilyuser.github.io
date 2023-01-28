@@ -124,7 +124,7 @@
         </div>
         <!-- PARAGRAPH ------------------------------->
         <div class="paragraph">
-          <p>Sticking to the <a href="https://i.imgflip.com/78xp99.jpg" target="_blank">Legos</a> metaphor, control flow is like the instructions that come with each set. Just as you start building with bag 1, page 1, a computer generally executes each line in code in sequential order.</p>
+          <p>Sticking to the <a href="https://i.imgflip.com/78xp99.jpg" target="_blank">Legos</a> metaphor, control flow is like the instructions that come with each set. Just as you start building with bag 1, page 1, a computer generally executes each line of code in sequential order.</p>
         </div>
         <!-- IMAGE --------------------------------->
         <div class="paragraph-image">
@@ -145,7 +145,7 @@
           </p>
         </div>
         <div class="paragraph">
-          <p>Unless the computer runs across the (extremely frequent) structures that change the control flow, such as conditionals and our next topic...</p>
+          <p>Unless the computer runs across the (extremely frequent) structures that change the control flow, such as conditionals or our next topic...</p>
         </div>
         <!-- SUBTITLE --------------------------------->
         <div class="subtitle">
@@ -233,7 +233,7 @@
         </div>
         <!-- PARAGRAPH ------------------------------->
         <div class="paragraph">
-          <p>The DOM (Document Object Model) allows us to make our HTML document more interactive and dynamic. It is a tree-like representation of web-pages with the document as it’s trunk, branching into body tags, &lt;div&gt; classes and ids and elements such as  &lt;h1&gt;, &lt;p&gt;, &lt;ul&gt;, etc. We access these with dot notation, lets look at our HTML car:</p>
+          <p>The DOM (Document Object Model) allows us to make our HTML document more interactive and dynamic. It is a tree-like representation of web-pages with the <span class="snippet">document</span> as it’s trunk, branching into body tags, <span class="snippet">&lt;div&gt;</span> classes and ids and elements such as <span class="snippet">&lt;h1&gt;</span>, <span class="snippet">&lt;p&gt;</span>, <span class="snippet">&lt;ul&gt;</span>, etc. We access these with dot notation, lets look at our HTML car:</p>
         </div>
         <!-- CODE --------------------------------------->
         <div class="paragraph quote code">
@@ -255,125 +255,219 @@
         </div>
         <!-- PARAGRAPH ------------------------------->
         <div class="paragraph">
-          <p></p>
+          <p>As you can see, it has an engine, two doors, four wheels, and all are contained within a nice teal paintjob. Lets start by changing the two doors into a set of wings. For this we will target with <span class="snippet">.getElementById</span> and <span class="snippet">.innerHTML</span> eg:</p>
         </div>
         <!-- CODE --------------------------------------->
         <div class="paragraph quote code">
           <p>
-            &nbsp;1.&nbsp;&nbsp;<br>
-            &nbsp;2.&nbsp;&nbsp;<br>
-            &nbsp;3.&nbsp;&nbsp;<br>
-            &nbsp;4.&nbsp;&nbsp;<br>
-            &nbsp;5.&nbsp;&nbsp;<br>
-            &nbsp;8.&nbsp;&nbsp;<br>
-            &nbsp;7.&nbsp;&nbsp;<br>
-            &nbsp;8.&nbsp;&nbsp;<br>
-            &nbsp;9.&nbsp;&nbsp;<br>
-            10.&nbsp;&nbsp;<br>
+            &nbsp;1.&nbsp;&nbsp;document.getElementById('doors').innerHTML = 'wings'<br>
           </p>
         </div>
         <!-- PARAGRAPH ------------------------------->
         <div class="paragraph">
-          <p></p>
+          <p>The car has four wheels but most planes only need three. To delete one span we will use <span class="snippet">.getElementsByClassName</span>, but because there are multiple spans with the same class we will add <span class="snippet">[0]</span> (remember, computers count starting from 0, not 1) to select the first span:</p>
         </div>
         <!-- CODE --------------------------------------->
         <div class="paragraph quote code">
           <p>
-            &nbsp;1.&nbsp;&nbsp;<br>
-            &nbsp;2.&nbsp;&nbsp;<br>
-            &nbsp;3.&nbsp;&nbsp;<br>
-            &nbsp;4.&nbsp;&nbsp;<br>
-            &nbsp;5.&nbsp;&nbsp;<br>
-            &nbsp;8.&nbsp;&nbsp;<br>
-            &nbsp;7.&nbsp;&nbsp;<br>
-            &nbsp;8.&nbsp;&nbsp;<br>
-            &nbsp;9.&nbsp;&nbsp;<br>
-            10.&nbsp;&nbsp;<br>
+            &nbsp;1.&nbsp;&nbsp;const deleteWheel = document.getElementsByClassName('wheel')[0]<br>
+            &nbsp;2.&nbsp;&nbsp;deleteWheel.remove()<br>
           </p>
         </div>
         <!-- PARAGRAPH ------------------------------->
         <div class="paragraph">
-          <p></p>
+          <p>The car engine will do just fine for a plane but we need to hook it up to a propellor. Lets target the div with the ID of “engine” and add a new class of “propellor”. This time we will need a function and we’ll use <span class="snippet">.classList</span> and <span class="snippet">.add</span>:</p>
         </div>
         <!-- CODE --------------------------------------->
         <div class="paragraph quote code">
           <p>
-            &nbsp;1.&nbsp;&nbsp;<br>
-            &nbsp;2.&nbsp;&nbsp;<br>
-            &nbsp;3.&nbsp;&nbsp;<br>
-            &nbsp;4.&nbsp;&nbsp;<br>
-            &nbsp;5.&nbsp;&nbsp;<br>
-            &nbsp;8.&nbsp;&nbsp;<br>
-            &nbsp;7.&nbsp;&nbsp;<br>
-            &nbsp;8.&nbsp;&nbsp;<br>
-            &nbsp;9.&nbsp;&nbsp;<br>
-            10.&nbsp;&nbsp;<br>
+            &nbsp;1.&nbsp;&nbsp;function propeller() {<br>
+            &nbsp;2.&nbsp;&nbsp;&nbsp;&nbsp;let propeller = document.getElementById('engine')<br>
+            &nbsp;3.&nbsp;&nbsp;&nbsp;&nbsp;propeller.classList.add('propeller')<br>
+            &nbsp;4.&nbsp;&nbsp;}<br>
           </p>
         </div>
         <!-- PARAGRAPH ------------------------------->
         <div class="paragraph">
-          <p></p>
+          <p>Finally, to give it some extra thrust lets give the whole thing a new paint job. Everybody knows red goes faster so lets use another function, this time with <span class="snippet">.style</span> to target the inline div style and <span class="snippet">.color</span> for the property: </p>
         </div>
         <!-- CODE --------------------------------------->
         <div class="paragraph quote code">
           <p>
-            &nbsp;1.&nbsp;&nbsp;<br>
-            &nbsp;2.&nbsp;&nbsp;<br>
-            &nbsp;3.&nbsp;&nbsp;<br>
-            &nbsp;4.&nbsp;&nbsp;<br>
-            &nbsp;5.&nbsp;&nbsp;<br>
-            &nbsp;8.&nbsp;&nbsp;<br>
-            &nbsp;7.&nbsp;&nbsp;<br>
-            &nbsp;8.&nbsp;&nbsp;<br>
-            &nbsp;9.&nbsp;&nbsp;<br>
-            10.&nbsp;&nbsp;<br>
+            &nbsp;1.&nbsp;&nbsp;function repaint() {<br>
+            &nbsp;2.&nbsp;&nbsp;&nbsp;&nbsp;let repaint = document.getElementById('paint')<br>
+            &nbsp;3.&nbsp;&nbsp;&nbsp;&nbsp;repaint.style.color = 'red'<br>
+            &nbsp;4.&nbsp;&nbsp;}<br>
           </p>
         </div>
         <!-- PARAGRAPH ------------------------------->
         <div class="paragraph">
-          <p></p>
+          <p>Finally, we have to initialise our functions with the next piece of code added to the top:</p>
         </div>
         <!-- CODE --------------------------------------->
         <div class="paragraph quote code">
           <p>
-            &nbsp;1.&nbsp;&nbsp;<br>
+            &nbsp;1.&nbsp;&nbsp;document.addEventListener('DOMContentLoaded', start)<br>
             &nbsp;2.&nbsp;&nbsp;<br>
-            &nbsp;3.&nbsp;&nbsp;<br>
-            &nbsp;4.&nbsp;&nbsp;<br>
-            &nbsp;5.&nbsp;&nbsp;<br>
-            &nbsp;8.&nbsp;&nbsp;<br>
-            &nbsp;7.&nbsp;&nbsp;<br>
-            &nbsp;8.&nbsp;&nbsp;<br>
-            &nbsp;9.&nbsp;&nbsp;<br>
-            10.&nbsp;&nbsp;<br>
+            &nbsp;3.&nbsp;&nbsp;function start() {<br>
+            &nbsp;4.&nbsp;&nbsp;&nbsp;&nbsp;propeller()<br>
+            &nbsp;5.&nbsp;&nbsp;&nbsp;&nbsp;repaint()<br>
+            &nbsp;6.&nbsp;&nbsp;}<br>
           </p>
         </div>
         <!-- PARAGRAPH ------------------------------->
         <div class="paragraph">
-          <p></p>
-        </div>
-        <!-- CODE --------------------------------------->
-        <div class="paragraph quote code">
           <p>
-            &nbsp;1.&nbsp;&nbsp;<br>
-            &nbsp;2.&nbsp;&nbsp;<br>
-            &nbsp;3.&nbsp;&nbsp;<br>
-            &nbsp;4.&nbsp;&nbsp;<br>
-            &nbsp;5.&nbsp;&nbsp;<br>
-            &nbsp;8.&nbsp;&nbsp;<br>
-            &nbsp;7.&nbsp;&nbsp;<br>
-            &nbsp;8.&nbsp;&nbsp;<br>
-            &nbsp;9.&nbsp;&nbsp;<br>
-            10.&nbsp;&nbsp;<br>
+            We’ll go into more detail about functions later, but for now if anything wasn’t clear feel free to find the finished website 
+            <a href="https://doilyuser.github.io/blog/lego-car/car" target="_blank">here.</a>
+          </p>
+        </div>
+        <div class="paragraph">
+          <p>
+            Can’t find the propeller? Try 
+            <a href="https://www.browserstack.com/guide/inspect-element-in-chrome#:~:text=One%20of%20the%20easiest%20ways,%2C%20Sources%2C%20and%20other%20tools." target="_blank">inspecting</a> the engine a little closer.
           </p>
         </div>
         <!-- IMAGE --------------------------------->
         <div class="paragraph-image">
           <img src="/images/JSP-8.jpg" alt="A happy Lego person with a Lego car in the background">
         </div>
+        <!-- SUBTITLE --------------------------------->
+        <div class="subtitle">
+          <h2>Objects<em></em></h2>
+        </div>
         <!-- PARAGRAPH ------------------------------->
         <div class="paragraph">
-          <p></p>
+          <p>Objects are used to represent a <em>“thing”</em> in your code. They are made up of a name, keys and values. In our previous example we could have stored our car as an object, with color, engine, doors, and wheels as it’s keys, and their properties as it’s values. Like so:</p>
+        </div>
+        <!-- CODE --------------------------------------->
+        <div class="paragraph quote code">
+          <p>
+            &nbsp;1.&nbsp;&nbsp;let car = {<br>
+            &nbsp;2.&nbsp;&nbsp;<br>
+            &nbsp;3.&nbsp;&nbsp;&nbsp;&nbsp;color: "teal",<br>
+            &nbsp;4.&nbsp;&nbsp;&nbsp;&nbsp;engine: true,<br>
+            &nbsp;5.&nbsp;&nbsp;&nbsp;&nbsp;doors: 2,<br>
+            &nbsp;6.&nbsp;&nbsp;&nbsp;&nbsp;wheels: 4<br>
+            &nbsp;7.&nbsp;&nbsp;}<br>
+          </p>
+        </div>
+        <!-- PARAGRAPH ------------------------------->
+        <div class="paragraph">
+          <p>Properties in objects can be accessed, added, changed, and removed by using either dot or bracket notation. To get the value of the color and engine keys in our car object we can write:</p>
+        </div>
+        <!-- CODE --------------------------------------->
+        <div class="paragraph quote code">
+          <p>
+            &nbsp;1.&nbsp;&nbsp;// Dot notation<br>
+            &nbsp;2.&nbsp;&nbsp;car.color<br>
+            &nbsp;3.&nbsp;&nbsp;car.engine<br>
+            &nbsp;4.&nbsp;&nbsp;// returns “teal” and true<br>
+          </p>
+        </div>
+        <div class="paragraph">
+          <p>OR</p>
+        </div>
+        <div class="paragraph quote code">
+          <p>
+            &nbsp;1.&nbsp;&nbsp;//Bracket notation<br>
+            &nbsp;2.&nbsp;&nbsp;car['color']<br>
+            &nbsp;3.&nbsp;&nbsp;car['engine']<br>
+            &nbsp;4.&nbsp;&nbsp;// returns “teal” and true<br>
+          </p>
+        </div>
+        <!-- PARAGRAPH ------------------------------->
+        <div class="paragraph">
+          <p>If we wanted to upgrade from a coupe to a sedan we could write:</p>
+        </div>
+        <!-- CODE --------------------------------------->
+        <div class="paragraph quote code">
+          <p>
+            &nbsp;1.&nbsp;&nbsp;car.doors = 4;<br>
+          </p>
+        </div>
+        <!-- PARAGRAPH ------------------------------->
+        <div class="paragraph">
+          <p>If we wanted to pimp our ride, we could use dot notation and add an array:</p>
+        </div>
+        <!-- CODE --------------------------------------->
+        <div class="paragraph quote code">
+          <p>
+            &nbsp;1.&nbsp;&nbsp;car.upgrades = ['spoiler', 'spinners', 'NOS'];<br>
+          </p>
+        </div>
+        <!-- PARAGRAPH ------------------------------->
+        <div class="paragraph">
+          <p>
+            Finally, to remove a property from an object, we use the <span class="snippet">delete</span> keyword. 
+          </p>
+        </div>
+        <div class="paragraph">    
+          <p>  
+            Maybe our Lego car has broken down and we need to remove the engine all together:
+          </p>
+        </div>
+        <!-- CODE --------------------------------------->
+        <div class="paragraph quote code">
+          <p>
+            &nbsp;1.&nbsp;&nbsp;delete car.engine;<br>
+          </p>
+        </div>
+        <!-- SUBTITLE --------------------------------->
+        <div class="subtitle">
+          <h2>Arrays<em></em></h2>
+        </div>
+        <!-- PARAGRAPH ------------------------------->
+        <div class="paragraph">
+          <p>Hinted at above, we use arrays whenever we want to store lists of items in a single variable. Let’s create a shopping list of Lego sets we’re saving up for:</p>
+        </div>
+        <!-- CODE --------------------------------------->
+        <div class="paragraph quote code">
+          <p>
+            &nbsp;1.&nbsp;&nbsp;let louisShoppingList = ['Millennium Falcon: 75192', 'Ghostbusters ECTO-1: 10274', 'Space Shuttle: 10283'];<br>
+          </p>
+        </div>
+        <!-- PARAGRAPH ------------------------------->
+        <div class="paragraph">
+          <p>To access our array and check our shopping list we use square bracket notation and again, count from 0, not 1:</p>
+        </div>
+        <!-- CODE --------------------------------------->
+        <div class="paragraph quote code">
+          <p>
+            &nbsp;1.&nbsp;&nbsp;louisShoppingList[1];<br>
+            &nbsp;2.&nbsp;&nbsp;// returns 'Ghostbusters ECTO-1: 10274'<br>
+          </p>
+        </div>
+        <!-- PARAGRAPH ------------------------------->
+        <div class="paragraph">
+          <p>Items can be added and removed from various positions with methods like, 
+          <span class="snippet">push()</span>,
+          <span class="snippet">pop()</span>,
+          <span class="snippet">unshift()</span>, and
+          <span class="snippet">shift()</span>. Our budget has decreased, lets remove the most expensive set and add a cheaper one to the end of the list:
+        </p>
+        </div>
+        <!-- CODE --------------------------------------->
+        <div class="paragraph quote code">
+          <p>
+            &nbsp;1.&nbsp;&nbsp;//shift() - Removes the first item from an array<br>
+            &nbsp;2.&nbsp;&nbsp;louisShoppingList.shift();<br>
+            &nbsp;3.&nbsp;&nbsp;<br>
+            &nbsp;4.&nbsp;&nbsp;// push() - Adds item(s) to the end of an array<br>
+            &nbsp;5.&nbsp;&nbsp;louisShoppingList.push('1989 Batmobile: 76139');<br>
+          </p>
+        </div>
+        <!-- PARAGRAPH ------------------------------->
+        <div class="paragraph">
+          <p>We’re ready for our trip to toy world. </p>
+        </div>
+        <!-- SUBTITLE --------------------------------->
+        <div class="subtitle">
+          <h2>Functions<em></em></h2>
+        </div>
+        <!-- PARAGRAPH ------------------------------->
+        <div class="paragraph">
+          <p>A function is the fundamental building block of a JavaScript application. It is one of the most essential concepts in the language. A Lego set is cool and all, but once they’re built, they frequently collect dust on a shelf. What if we could make them move? </p>
         </div>
         <!-- IMAGE --------------------------------->
         <div class="paragraph-image">
@@ -381,7 +475,42 @@
         </div>
         <!-- PARAGRAPH ------------------------------->
         <div class="paragraph">
-          <p></p>
+          <p>A simple machine takes an input, does something to it and gives an output. When you add a motor to our Lego car it can leave the shelf and drive about the room. Input from a remot control car is converted into directions for the wheels to move. That’s exactly what functions do as well.</p>
+        </div>
+        <!-- PARAGRAPH ------------------------------->
+        <div class="paragraph">
+          <p>We use a function when we want to re-use a piece of code throughout the rest of our JS file. <em>Let’s toot the horn.</em></p>
+        </div>
+        <div class="paragraph quote code">
+          <p>
+            &nbsp;1.&nbsp;&nbsp;function horn() {<br>
+            &nbsp;2.&nbsp;&nbsp;&nbsp;&nbsp;return('toot toot');<br>
+            &nbsp;3.&nbsp;&nbsp;}<br>
+            &nbsp;4.&nbsp;&nbsp;<br>
+            &nbsp;5.&nbsp;&nbsp;horn();<br>
+            &nbsp;6.&nbsp;&nbsp;<br>
+            &nbsp;7.&nbsp;&nbsp;//returns “toot toot”<br>
+          </p>
+        </div>
+        <!-- PARAGRAPH ------------------------------->
+        <div class="paragraph">
+          <p>So, what have we done here?</p>
+        </div>
+        <!-- PARAGRAPH ------------------------------->
+        <div class="paragraph">
+          <p>
+            <ul>
+              <li>We started with the <span class="snippet">function</span> keyword. This is how we declare a function.</li>
+              <li>Then, we defined a function name, which is <span class="snippet">horn</span>. We can use this to call it later.</li>
+              <li>Then, we added parenthesis <span class="snippet">()</span>. We use parenthesis to add parameters which we’ll explore later.</li>
+              <li>Then, we used curly braces <span class="snippet">{}</span> to create a function body. This is the code that will be executed when we run this function.</li>
+              <li>To use this function, we simply write the function name followed by parenthesis <span class="snippet">horn()</span>. A process referred to as “calling" the function.</li>
+            </ul>
+          </p>
+        </div>
+        <!-- PARAGRAPH ------------------------------->
+        <div class="paragraph">
+          <p>We can use this function again and again throughout our program whenever we need to reprimand Lego BMW drivers for not giving way. </p>
         </div>
         <!-- IMAGE --------------------------------->
         <div class="paragraph-image">
@@ -389,11 +518,50 @@
         </div>
         <!-- PARAGRAPH ------------------------------->
         <div class="paragraph">
-          <p></p>
+          <p>I’m often asked my opinion on a particular Lego set, but my answer rarely changes. Here’s how I could write it without a function.</p>
+        </div>
+        <!-- CODE --------------------------------------->
+        <div class="paragraph quote code">
+          <p>
+            &nbsp;1.&nbsp;&nbsp;const opinion = “that’s a pretty cool set!”<br>
+          </p>
         </div>
         <!-- PARAGRAPH ------------------------------->
         <div class="paragraph">
-          <p></p>
+          <p>But I would have to write my opinion every time someone asked. Let's write this using a function instead.</p>
+        </div>
+        <!-- CODE --------------------------------------->
+        <div class="paragraph quote code">
+          <p>
+            &nbsp;1.&nbsp;&nbsp;function opinion(legoSet) {<br>
+            &nbsp;2.&nbsp;&nbsp;&nbsp;&nbsp;return legoSet + “ is pretty cool!”;<br>
+            &nbsp;3.&nbsp;&nbsp;}<br>
+            &nbsp;4.&nbsp;&nbsp;<br>
+            &nbsp;5.&nbsp;&nbsp;const firstSet = opinion(“Millennium Falcon”);<br>
+            &nbsp;6.&nbsp;&nbsp;// Returns “Millennium Falcon is pretty cool!”<br>
+          </p>
+        </div>
+        <!-- PARAGRAPH ------------------------------->
+        <div class="paragraph">
+          <p>As you can see, we have written more code in the second example, but it would be useful to write a cleaner code when we want to ask about every single Lego set. Check the below example.</p>
+        </div>
+        <!-- CODE --------------------------------------->
+        <div class="paragraph quote code">
+          <p>
+            &nbsp;1.&nbsp;&nbsp;const firstSet = opinion(“Imperial Star Destroyer”); <br>
+            &nbsp;2.&nbsp;&nbsp;// Returns “Imperial Star Destroyer is pretty cool”<br>
+            &nbsp;3.&nbsp;&nbsp;const secondSet = opinion(“AT-AT walker”); <br>
+            &nbsp;4.&nbsp;&nbsp;// Returns “AT-AT walker is pretty cool”<br>
+            &nbsp;5.&nbsp;&nbsp;const thirdSet = opinion(“The Razor Crest”); <br>
+            &nbsp;6.&nbsp;&nbsp;// Returns “The Razor Crest is pretty cool”<br>
+          </p>
+        </div>
+        <!-- PARAGRAPH ------------------------------->
+        <div class="paragraph">
+          <p>So much time saved! </p>
+        </div>
+        <div class="paragraph">
+          <p>If you found any of this useful, feel free to <a href="https://www.toyworld.co.nz/products/lego-star-wars-millennium-falcon-75192" target="_blank">send me a tip.</a></p>
         </div>
         <!-- IMAGE --------------------------------->
         <div class="paragraph-image">
@@ -406,7 +574,7 @@
           </p>
         </div>
         <!-- CODE --------------------------------------->
-        <div class="paragraph quote code">
+        <!-- <div class="paragraph quote code">
           <p>
             &nbsp;1.&nbsp;&nbsp;<br>
             &nbsp;2.&nbsp;&nbsp;<br>
@@ -419,7 +587,7 @@
             &nbsp;9.&nbsp;&nbsp;<br>
             10.&nbsp;&nbsp;<br>
           </p>
-        </div>
+        </div> -->
       </section>
 
       

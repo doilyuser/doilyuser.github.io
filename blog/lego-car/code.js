@@ -27,7 +27,3 @@ function repaint() {
   let repaint = document.getElementById('paint')
   repaint.style.color = 'red'
 }
-
-for (let i = 0; i < 15; i++) {
-  console.log('brick')
-}
