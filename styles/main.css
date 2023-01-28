@@ -304,6 +304,12 @@ img {
   margin-top: 10%;
 }
 
+.snippet {
+  font-family: monospace;
+  color: #FFFFFF;
+  background-color: #000000;
+}
+
 .paragraph-image {
   display: block;
   margin-left: auto;
