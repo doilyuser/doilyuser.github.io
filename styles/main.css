@@ -337,22 +337,26 @@ img {
   .article-heading {padding: 0px 0px 0px 0px;}
   /* #blog {padding: 25px;} */
   .article-heading h3 {font-size: var(--font-size-sm);}
+  .subtitle h2 {font-size: var(--font-size-sm);}
+  #blog-hero {
+    /* max-width: 350px;
+    margin: auto; */
+  }
 }
 
 @media (max-width: 375px) {
   .bg-image {min-width: 375px;}
   .bg-image-article {min-width: 375px;}
   .header {min-width: 375px;}
+  .blog-box {width: 335px;}
+  #blog-hero {min-width: 335px;}
 }
 
 @media (max-width: 320px) {
   .bg-image .bg-image-article .header {min-width: 320px;}
+  .blog-box {
+    width: 280px;
+    margin: 20px, 0px;
+  }
+  #blog-hero {min-width: 280px;}
 }
-
-/* Sort out the font size in detail this time 
-  --font-size-xs: 1.6rem; 
-  --font-size-sm: 2.4rem;
-  --font-size-md: 3rem;
-  --font-size-lg: 4rem;
-  --font-size-xl: 5rem;
-*/
