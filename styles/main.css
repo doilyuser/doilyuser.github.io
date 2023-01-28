@@ -219,7 +219,7 @@ img {
 }
 
 .blog-text {
-  padding: 30px;
+  padding: 10px 0px 0px 30px;
   display: flex;
   flex-direction: column;
 }
@@ -275,7 +275,6 @@ img {
 .subtitle, 
 .date,
 .paragraph {
-  /* margin: 3% 25% 3% 25%; */
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -284,22 +283,14 @@ img {
 }
 
 .quote {
-  /* margin: 3% 25% 3% 25%; */
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
   width: 60%;
   margin-top: 10%;
 }
 
 .code {
-  /* margin: 3% 25% 3% 25%; */
   font-family: monospace;
   color: #FFFFFF;
   background-color: #000000;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
   width: 60%;
   margin-top: 10%;
 }
@@ -321,27 +312,32 @@ img {
 @media (max-width: 2560px) {
   .article-heading {padding: 30px 0px 0px 30px;}
   .article-heading h3 {font-size: var(--font-size-xl);}
+  .blog-text span {font-size: var(--font-size-md);}
+  /* .subtitle, 
+  .date,
+  .paragraph {width: 50%;}
+  .quote {width: 40%;}
+  .code {width: 30%;} */
 }
 
 @media (max-width: 1440px) {
   .article-heading h3 {font-size: var(--font-size-md);}
+  .blog-text span {font-size: var(--font-size-sm);}
 }
 
 @media (max-width: 768px) {
   .code {font-size: var(--font-size-xs);}
   .article-heading {padding: 10px 0px 0px 10px;}
+  .blog-text {padding: 30px 0px 0px 10px;}
 }
 
 @media (max-width: 425px) {
   .title {display: none;}
-  .article-heading {padding: 0px 0px 0px 0px;}
-  /* #blog {padding: 25px;} */
+  .article-heading {padding: 0px 0px 0px 3px;}
+  .blog-text {padding: 20px 0px 0px 3px;}
   .article-heading h3 {font-size: var(--font-size-sm);}
+  .blog-text span {font-size: var(--font-size-xs);}
   .subtitle h2 {font-size: var(--font-size-sm);}
-  #blog-hero {
-    /* max-width: 350px;
-    margin: auto; */
-  }
 }
 
 @media (max-width: 375px) {
