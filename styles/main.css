@@ -87,7 +87,7 @@ img {
 .banner {
   color: #FFFFFF;
   background-image: url(/images/blog-bw-1.jpg);
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   /* object-fit: cover; */
   background-size: cover;
   width: 80vw;
@@ -123,7 +123,7 @@ img {
 }
 
 .article-heading {
-  padding: 30px 0px 0px 30px;
+  padding: 20px 0px 0px 20px;
   display: flex;
   justify-content: flex-start;
   align-items: left;
@@ -318,8 +318,25 @@ img {
   margin-top: 10%;  
 }
 
-@media (max-width: 320px) {
-  .bg-image .bg-image-article .header {min-width: 320px;}
+@media (max-width: 2560px) {
+  .article-heading {padding: 30px 0px 0px 30px;}
+  .article-heading h3 {font-size: var(--font-size-xl);}
+}
+
+@media (max-width: 1440px) {
+  .article-heading h3 {font-size: var(--font-size-md);}
+}
+
+@media (max-width: 768px) {
+  .code {font-size: var(--font-size-xs);}
+  .article-heading {padding: 10px 0px 0px 10px;}
+}
+
+@media (max-width: 425px) {
+  .title {display: none;}
+  .article-heading {padding: 0px 0px 0px 0px;}
+  /* #blog {padding: 25px;} */
+  .article-heading h3 {font-size: var(--font-size-sm);}
 }
 
 @media (max-width: 375px) {
@@ -328,19 +345,9 @@ img {
   .header {min-width: 375px;}
 }
 
-@media (max-width: 425px) {
-  .title {display: none;}
-  /* #blog {padding: 25px;} */
-  .article-heading h3 {font-size: var(--font-size-sm);}
+@media (max-width: 320px) {
+  .bg-image .bg-image-article .header {min-width: 320px;}
 }
-
-@media (max-width: 768px) {
-  .code {font-size: var(--font-size-xs);}
-}
-
-@media (max-width: 1440px) {}
-
-@media (max-width: 2560px) {}
 
 /* Sort out the font size in detail this time 
   --font-size-xs: 1.6rem; 
