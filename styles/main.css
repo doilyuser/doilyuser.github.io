@@ -87,8 +87,6 @@ img {
 .banner {
   color: #FFFFFF;
   background-image: url(/images/blog-bw-1.jpg);
-  /* background-attachment: fixed; */
-  /* object-fit: cover; */
   background-size: cover;
   width: 80vw;
   height: 25vh;
@@ -98,22 +96,27 @@ img {
 
 .banner-two {
   background-image: url(/images/blog-bw-7.jpg);
+  height: auto;
 }
 
 .banner-three {
   background-image: url(/images/blog-bw-8.jpg);
+  height: auto;
 }
 
 .banner-four {
   background-image: url(/images/blog-bw-9.jpg);
+  height: auto;
 }
 
 .banner-five {
   background-image: url(/images/blog-bw-10.jpg);
+  height: auto;
 }
 
 .banner-six {
   background-image: url(/images/blog-bw-11.jpg);
+  height: auto;
 }
 
 #blog {
@@ -288,7 +291,7 @@ img {
 }
 
 .code {
-  overflow: auto;
+  overflow: scroll;
   font-family: monospace;
   color: #FFFFFF;
   background-color: #000000;
@@ -310,7 +313,7 @@ img {
   margin-top: 10%;  
 }
 
-@media (max-width: 2560px) {
+@media (max-width: 2561px) {
   .article-heading {padding: 30px 0px 0px 30px;}
   .article-heading h3 {font-size: var(--font-size-xl);}
   .blog-text span {font-size: var(--font-size-md);}
@@ -321,35 +324,39 @@ img {
   .code {width: 30%;} */
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1441px) {
   .article-heading h3 {font-size: var(--font-size-md);}
   .blog-text span {font-size: var(--font-size-sm);}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .code {font-size: var(--font-size-xs);}
   .article-heading {padding: 10px 0px 0px 10px;}
   .blog-text {padding: 30px 0px 0px 10px;}
-  .blog-text span {display: none;}
+  /* .blog-text span {display: none;} */
+  .code {width: 450px;}
 }
 
-@media (max-width: 425px) {
+@media (max-width: 426px) {
   .title {display: none;}
   .article-heading {padding: 0px 0px 0px 3px;}
   .blog-text {padding: 20px 0px 0px 3px;}
   .article-heading h3 {font-size: var(--font-size-sm);}
   .subtitle h2 {font-size: var(--font-size-sm);}
+  .blog-text span {font-size: var(--font-size-xs)}
+  .code {width: 375px;}
 }
 
-@media (max-width: 375px) {
+@media (max-width: 376px) {
   .bg-image {min-width: 375px;}
   .bg-image-article {min-width: 375px;}
   .header {min-width: 375px;}
   .blog-box {width: 335px;}
   #blog-hero {min-width: 335px;}
+  .code {width: 320px;}
 }
 
-@media (max-width: 320px) {
+@media (max-width: 321px) {
   .bg-image .bg-image-article .header {min-width: 320px;}
   .blog-box {
     width: 280px;
