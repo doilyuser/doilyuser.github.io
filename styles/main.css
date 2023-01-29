@@ -329,6 +329,7 @@ img {
   .code {font-size: var(--font-size-xs);}
   .article-heading {padding: 10px 0px 0px 10px;}
   .blog-text {padding: 30px 0px 0px 10px;}
+  .blog-text span {display: none;}
 }
 
 @media (max-width: 425px) {
@@ -336,7 +337,6 @@ img {
   .article-heading {padding: 0px 0px 0px 3px;}
   .blog-text {padding: 20px 0px 0px 3px;}
   .article-heading h3 {font-size: var(--font-size-sm);}
-  .blog-text span {font-size: var(--font-size-xs);}
   .subtitle h2 {font-size: var(--font-size-sm);}
 }
 
