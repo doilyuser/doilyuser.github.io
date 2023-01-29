@@ -1,5 +1,5 @@
 :root {
-  --font-size-xs: 1.6rem; 
+  --font-size-xs: 1.4rem; 
   --font-size-sm: 2.4rem;
   --font-size-md: 3rem;
   --font-size-lg: 4rem;
@@ -357,10 +357,14 @@ img {
 }
 
 @media (max-width: 321px) {
-  .bg-image .bg-image-article .header {min-width: 320px;}
+  .bg-image,
+  .bg-image-article,
+  .header {min-width: 320px;}
   .blog-box {
     width: 280px;
     margin: 20px, 0px;
   }
   #blog-hero {min-width: 280px;}
+  .code {width: 300px;
+  font-size: var(--font-size-xs);}
 }
