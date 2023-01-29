@@ -1,40 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>It's a backend... It's a frontend... It's Javascript!</title>
-  <link rel="stylesheet" type="text/css" href="../styles/main.css">
-  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header class="header">
-    <nav class="navbar">
-      <a class="logo" href="../index.html">
-        <img src="../images/logo.png" alt="rubberduck logo">
-        <h1 class="title">Louis Dyer</h1>
-      </a>
-      <div class="menu">
-        <ul class="list">
-          <li class="list-item">
-            <a href="../index.html" class="list-link">Home</a>
-          </li>
-          <li class="list-item">
-            <a href="#" class="list-link">Tech</a>
-          </li>
-          <li class="list-item">
-            <a href="#" class="list-link">Core</a>
-          </li>
-        </ul>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>It's a backend... It's a frontend... It's Javascript!</title>
+    <link rel="stylesheet" type="text/css" href="../styles/main.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <a class="logo" href="../index.html">
+          <img src="../images/logo.png" alt="rubberduck logo">
+          <h1 class="title">Louis Dyer</h1>
+        </a>
+        <div class="menu">
+          <ul class="list">
+            <li class="list-item">
+              <a href="../index.html" class="list-link">Home</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Tech</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Core</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="landing-page">
+      <img class="bg-image-article" src="../images/bg-image.png" alt="background image">
+    </div>
+    <section id="blog">
+      <div id="blog" class="banner banner-six" > 
+        <div> 
+          <!-- TITLE ---------------------------------->
+          <div class="article-heading black">
+            <h3>It's a backend... It's a frontend... It's Javascript!</h3>
+          </div>
+          <!-- DATE + GENRE ----------------------------------->
+          <div class="blog-text black">
+            <span>28.01.23 // Tech</span>
+          </div>
+        </div>
       </div>
-    </nav>
-  </header>
-  <div class="landing-page">
-    <img class="bg-image-article" src="../images/bg-image.png" alt="background image">
-  </div>
-</body>
+      <div class="article-text">
+        <div class="subtitle">
+          <h2>We’ve already built our webpages, populated them with content and styled that content so what gives? <em>Why do we need JavaScript?</em></h2>
+        </div>
+        <div class="date">
+          <h3><em>28.01.23</em></h3>
+        </div>
+        <div class="paragraph">
+          <p>First, a quick refresher. I’m going to borrow from <a href="https://www.youtube.com/watch?v=gT0Lh1eYk78" target="_blank">an analogy</a> provided in a previous sprint.</p>
+        </div>
+        <div class="paragraph-image">
+          <img src="/images/JSP-1.jpg" alt="A Lego person dressed as a builder">
+        </div>
+        <div class="subtitle">
+          <h2>HTML, <em>The Builder.</em></h2>
+        </div>
+        <!-- PARAGRAPH ------------------------------->
+        <div class="paragraph">
+          <p>This guy provides the content and holds most our media. Most importantly it provides the framework on which our website is built. This tells the browser where each item sits in relation to each other and how to access it. Without CSS it’ll look pretty bland though. </p>
+        </div>
+        <!-- IMAGE --------------------------------->
+        <div class="paragraph-image">
+          <img src="/images/JSP-2.jpg" alt="A lego person dressed as an artist">
+        </div>
+        <!-- SUBTITLE --------------------------------->
+        <div class="subtitle">
+          <h2>CSS, <em>The Artist.</em></h2>
+        </div>
+        <!-- PARAGRAPH ------------------------------->
+        <div class="paragraph">
+          <p>Whilst black Verdana text and blue links on a white background is a vibe, to create an original looking website one might use CSS. This can provide custom fonts, colours and position your websites content.</p>
+        </div>
+        <!-- IMAGE --------------------------------->
+        <div class="paragraph-image">
+          <img src="/images/JSP-3.jpg" alt="A lego person dressed as a wizard">
+        </div>
+        <!-- SUBTITLE --------------------------------->
+        <div class="subtitle">
+          <h2>JavaScript, <em>The Wizard.</em></h2>
+        </div>
+        <!-- PARAGRAPH ------------------------------->
+        <div class="paragraph">
+          <p>Now that we have a modern <em>looking</em> website we can add the magic. If you want a modern <em>acting</em> website, Javascript is your <a href="https://i.imgflip.com/78xnyz.jpg" target="_blank">new best friend.</a></p>
+        </div>
+        <div class="paragraph">
+          <p>JS is the dominant force behind website development. With it you can add smooth animations, pop-up error messages, autofill, or live-update text on screen. Without it, websites like Facebook, Google, and YouTube (amongst <a href="https://www.semrush.com/blog/most-visited-websites/" target="_blank">"others"</a>) wouldn't be possible</p>
+        </div>
+        <div class="paragraph">
+          <p>Stick ‘em all together and you have the most common method of creating websites in 2023.</p>
+        </div>
+        <!-- IMAGE --------------------------------->
+        <div class="paragraph-image">
+          <img src="/images/JSP-4.jpg" alt="Many lego people being pushed together">
+        </div>
+        <!-- SUBTITLE --------------------------------->
+        <div class="subtitle">
+          <h2>Control Flow<em></em></h2>
+        </div>
+        <!-- PARAGRAPH ------------------------------->
+        <div class="paragraph">
+          <p>Sticking to the <a href="https://i.imgflip.com/78xp99.jpg" target="_blank">Legos</a> metaphor, control flow is like the instructions that come with each set. Just as you start building with bag 1, page 1, a computer generally executes each line of code in sequential order.</p>
+        </div>
+        <!-- IMAGE --------------------------------->
+        <div class="paragraph-image">
+          <img src="/images/JSP-5.jpg" alt="Lego instruction manual">
+        </div>
+        <!-- PARAGRAPH ------------------------------->
+        <div class="paragraph">
+          <p>Code is run in order from the first line in the file to the last line.</p>
+        </div>
+        <!-- CODE --------------------------------------->
+        <div class="paragraph quote code">
+          <p>
+            &nbsp;1.&nbsp;&nbsp;Do this first.<br>
+            &nbsp;2.&nbsp;&nbsp;This second.<br>
+            &nbsp;3.&nbsp;&nbsp;Then this.<br>
+            &nbsp;4.&nbsp;&nbsp;Then after that, this.<br>
+            &nbsp;5.&nbsp;&nbsp;Do 4. Then do this.<br>
+          </p>
+        </div>
+        <div class="paragraph">
+          <p>Unless the computer runs across the (extremely frequent) structures that change the control flow, such as conditionals or our next topic...</p>
+        </div>
+        <!-- SUBTITLE --------------------------------->
+        <div class="subtitle">
+          <h2>Loops<em></em></h2>
+        </div>
+        <!-- PARAGRAPH ------------------------------->
+        <div class="paragraph">
+          <p>
+            There are many types of loops in JavaScript, such as <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while" target="_blank">do...while</a> or 
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of" target="_blank">for...of</a> but today we’re going to be focusing on the simple 
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for" target="_blank">for.</a>
+          </p>
+        </div>
+        <!-- IMAGE --------------------------------->
+        <div class="paragraph-image">
+          <img src="/images/JSP-6.jpg" alt="A colorful Lego house">
+        </div>
+        <!-- PARAGRAPH ------------------------------->
+        <div class="paragraph">
+          <p>The above building is 15 blocks high. To get to that height we could write the same piece of code 15 times:</p>
+        </div>
+        <!-- CODE --------------------------------------->
+        <div class="paragraph quote code">
+          <p>
+            &nbsp;1.&nbsp;&nbsp;console.log(“brick”)<br>
+            &nbsp;2.&nbsp;&nbsp;console.log(“brick”)<br>
+            &nbsp;3.&nbsp;&nbsp;console.log(“brick”)<br>
+            &nbsp;4.&nbsp;&nbsp;console.log(“brick”)<br>
+            &nbsp;5.&nbsp;&nbsp;console.log(“brick”)<br>
+            &nbsp;6.&nbsp;&nbsp;console.log(“brick”)<br>
+            &nbsp;7.&nbsp;&nbsp;console.log(“brick”)<br>
+            &nbsp;8.&nbsp;&nbsp;console.log(“brick”)<br>
+            &nbsp;9.&nbsp;&nbsp;console.log(“brick”)<br>
+            10.&nbsp;&nbsp;console.log(“brick”)<br>
+            11.&nbsp;&nbsp;console.log(“brick”)<br>
+            12.&nbsp;&nbsp;console.log(“brick”)<br>
+            13.&nbsp;&nbsp;console.log(“brick”)<br>
+            14.&nbsp;&nbsp;console.log(“brick”)<br>
+            15.&nbsp;&nbsp;console.log(“brick”)<br>
+          </p>
+        </div>
+        <!-- PARAGRAPH ------------------------------->
+        <div class="paragraph">
+          <p>Or using much less space we could write a loop that repeats 15 times:</p>
+        </div>
+        <!-- CODE --------------------------------------->
+        <div class="paragraph quote code">
+          <p>
+            &nbsp;1.&nbsp;&nbsp;for (let i = 0; i < 15; i++) {<br>
+            &nbsp;2.&nbsp;&nbsp;&nbsp;&nbsp;console.log("brick");<br>
+            &nbsp;3.&nbsp;&nbsp;}<br>
+          </p>
+        </div>
+        <!-- PARAGRAPH ------------------------------->
+        <div class="paragraph">
+          <p>This statement consists of five distinct pieces:</p>
+        </div>
+        <!-- PARAGRAPH ------------------------------->
+        <div class="paragraph">
+          <p>
+            <ul>
+              <li>A statement, <span class="snippet">for</span> this tells the computer that a loop is about to follow.</li>
+              <li>An initialiser, <span class="snippet">let i =0;</span> a variable, typically used as a counter for the loop.</li>
+              <li>A condition, <span class="snippet">i < 15;</span> the computer will check if this condition is true at the beginning of each loop and if so, execute the statement. If not, the computer will execute the loop. </li>
+              <li>An afterthought, <span class="snippet">i++</span> the computer will execute this expression each loop. In this example and generally, this is used to update the counter.</li>
+              <li>A statement, <span class="snippet">console.log(“brick”)</span> this will be done by the machine each time it finds the condition true. Thus printing our 15 rows of bricks needed for our Lego house example. </li>
+            </ul>
+          </p>
+        </div>
+        <!-- SUBTITLE --------------------------------->
+        <div class="subtitle">
+          <h2>Loops<em></em></h2>
+        </div>
+        <!-- PARAGRAPH ------------------------------->
+        <div class="paragraph">
+          <p>
+            Whilst collecting sets and following the instructions is fun (so long as you can 
+            <a href="https://www.toyworld.co.nz/products/lego-star-wars-millennium-falcon-75192" target="_blank">afford it</a>) the great thing about Lego is not doing so might be more fun. By tearing sets apart and remixing the pieces, we can make our car into a boat or a plane. The DOM allows us to target our old set, and replace our driver’s door with a wing, or the roof with a mast and sails. Think of it as a new set of instructions that we deliver to the computer to create our new
+            <a href="https://en.wikipedia.org/wiki/Ship_of_Theseus" target="_blank">Ship of Theseus.</a>
+          </p>
+        </div>
+        <!-- IMAGE --------------------------------->
+        <div class="paragraph-image">
+          <img src="/images/JSP-7.jpg" alt="A complete Lego car and smaller broken one">
+        </div>
+        <!-- PARAGRAPH ------------------------------->
+        <div class="paragraph">
+          <p>The DOM (Document Object Model) allows us to make our HTML document more interactive and dynamic. It is a tree-like representation of web-pages with the <span class="snippet">document</span> as it’s trunk, branching into body tags, <span class="snippet">&lt;div&gt;</span> classes and ids and elements such as <span class="snippet">&lt;h1&gt;</span>, <span class="snippet">&lt;p&gt;</span>, <span class="snippet">&lt;ul&gt;</span>, etc. We access these with dot notation, lets look at our HTML car:</p>
+        </div>
+        <!-- CODE --------------------------------------->
+        <div class="paragraph quote code">
+          <p>
+            &nbsp;1.&nbsp;&nbsp;&lt;div id="paint" style="color: teal;"><br>
+            &nbsp;2.&nbsp;&nbsp;&nbsp;&nbsp;&lt;div id="engine">engine&lt;/div><br>
+            &nbsp;3.&nbsp;&nbsp;&nbsp;&nbsp;&lt;div id="doors"><br>
+            &nbsp;4.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="door left">door&lt;/span><br>
+            &nbsp;5.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="door right">door&lt;/span><br>
+            &nbsp;6.&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+            &nbsp;7.&nbsp;&nbsp;&nbsp;&nbsp;&lt;div id="wheels"><br>
+            &nbsp;8.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="wheel">wheel&lt;/h1>&lt;/span><br>
+            &nbsp;9.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="wheel">wheel&lt;/h1>&lt;/span><br>
+            10.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="wheel">wheel&lt;/h1>&lt;/span><br>
+            11.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="wheel">wheel&lt;/h1>&lt;/span><br>
+            12.&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+            13.&nbsp;&nbsp;&lt;/div><br>
+          </p>
+        </div>
+        <!-- PARAGRAPH ------------------------------->
+        <div class="paragraph">
+          <p>As you can see, it has an engine, two doors, four wheels, and all are contained within a nice teal paintjob. Lets start by changing the two doors into a set of wings. For this we will target with <span class="snippet">.getElementById</span> and <span class="snippet">.innerHTML</span> eg:</p>
+        </div>
+        <!-- CODE --------------------------------------->
+        <div class="paragraph quote code">
+          <p>
+            &nbsp;1.&nbsp;&nbsp;document.getElementById('doors').innerHTML = 'wings'<br>
+          </p>
+        </div>
+        <!-- END ---------------------------------------->
+      </div>
+    </section>
+  </body>
 </html>

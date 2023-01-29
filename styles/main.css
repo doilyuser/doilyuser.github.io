@@ -288,6 +288,7 @@ img {
 }
 
 .code {
+  overflow: auto;
   font-family: monospace;
   color: #FFFFFF;
   background-color: #000000;
