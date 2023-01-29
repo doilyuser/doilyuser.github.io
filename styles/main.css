@@ -348,8 +348,8 @@ img {
 }
 
 @media (max-width: 376px) {
-  .bg-image {min-width: 375px;}
-  .bg-image-article {min-width: 375px;}
+  .bg-image,
+  .bg-image-article,
   .header {min-width: 375px;}
   .blog-box {width: 335px;}
   #blog-hero {min-width: 335px;}
