@@ -231,7 +231,7 @@ img {
 }
 
 .blog-text {
-  padding: 10px 0px 0px 30px;
+  padding: 10px 30px 10px 30px;
   display: flex;
   flex-direction: column;
 }
