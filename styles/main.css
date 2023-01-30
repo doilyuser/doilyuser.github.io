@@ -28,6 +28,10 @@ a {
   color: inherit;
 }
 
+p {
+  overflow-wrap: break-word;
+}
+
 img {
   max-width: 100%;
   /* display: block; */
@@ -287,7 +291,6 @@ img {
 
 .quote {
   width: 60%;
-  margin-top: 10%;
 }
 
 .code {
@@ -296,7 +299,6 @@ img {
   color: #FFFFFF;
   background-color: #000000;
   width: 60%;
-  margin-top: 10%;
 }
 
 .snippet {
