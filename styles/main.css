@@ -128,6 +128,11 @@ img {
   height: auto;
 }
 
+.banner-eight {
+  background-image: url(/images/blog-bw-13.jpg);
+  height: auto;
+}
+
 #blog {
   display: flex;
   align-items: flex-start;
