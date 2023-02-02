@@ -42,11 +42,11 @@
       <div id="blog" class="banner banner-eight" > 
         <div> 
           <!-- TITLE ---------------------------------->
-          <div class="article-heading black">
+          <div class="article-heading">
             <h3>.when(lifeGivesYou, lemons => TypeError: Cannot read properties of undefined);</h3>
           </div>
           <!-- DATE + GENRE ----------------------------------->
-          <div class="blog-text black">
+          <div class="blog-text">
             <span>02.02.23 // Core</span>
           </div>
         </div>
@@ -54,7 +54,7 @@
       <div class="article-text">
         <!-- MAIN SUBTITLE ------------------------------->
         <div class="subtitle">
-          <h2><em></em></h2>
+          <h2>.when(lifeGivesYou, lemons => TypeError: Cannot read properties of undefined);<em></em></h2>
         </div>
         <!-- DATE --------------------------------------->
         <div class="date">
@@ -76,34 +76,148 @@
             12 days ago:
           </p>
         </div>
-        <!-- PARAGRAPH ------------------------------->
-        <div class="paragraph">
-          <p></p>
-        </div>
-        <!-- IMAGE --------------------------------->
-        <div class="paragraph-image">
-          <img src="" alt="">
-        </div>
         <!-- QUOTE ------------------------------------------>
         <div class="paragraph quote">
           <p>
-            <em></em>
+            <em>“I solved another [problem] by going outside on the Interislander. I had been going nowhere with a .header selector for nearly three hours when the captain announced there was a fire in the main engine. We were evacuated to the balcony. Whilst nervous about my ability to swim I realised my ID tags were the problem. We made it to Picton and I made a resolution. Take breaks.”</em>
+          </p>
+        </div>
+        <!-- PARAGRAPH ------------------------------->
+        <div class="paragraph">
+          <p>Well.</p>
+        </div>
+        <div class="paragraph">
+          <p>I didn’t try that, and it didn’t work. </p>
+        </div>
+        <!-- IMAGE --------------------------------->
+        <div class="paragraph-image">
+          <img src="/images/PS-2.jpg" alt="A drill being used on a computer chip">
+        </div>
+        <!-- PARAGRAPH ------------------------------->
+        <div class="paragraph">
+          <p>JavaScript might be a whole new language but we’re steadily learning the same lesson. </p>
+        </div>
+        <div class="paragraph">
+          <p>This week, I’ve solved a kata (a small – sudoku sized - coding problem) by:</p>
+        </div>
+        <!-- LIST ------------------------------->
+        <div class="paragraph">
+          <p>
+            <ul>
+              <li>Sleeping on it</li>
+              <li>Breaking for a late lunch</li>
+              <li>Brewing a coffee</li>
+              <li>Having a beersy </li>
+              <li>Closing my laptop and opening the Replit app</li>
+            </ul>
+          </p>
+        </div>
+        <!-- PARAGRAPH ------------------------------->
+        <div class="paragraph">
+          <p>It seems the longer you stare at an issue, the less likely you are to have a that <b>eureka</b> moment.</p>
+        </div>
+        <div class="paragraph">
+          <p>When I was working on Kata 2 – Manipulating Objects, I forgot exactly that, how to manipulate objects. Dev is not my first-time using an object-orientated language, or even using JavaScript. It was the afternoon after a long day and I’m one of those lucky few <em>”morning people”</em>. Unfortunately, this means my productivity quickly wanes after lunch. Brute forcing syntax, everything I tried would not change Terah’s fertility status and I had only just written a blog about how to use <a href="https://doilyuser.github.io/blog/javascript-dom.html" target="_blank">dot notation</a>.</p>
+        </div>
+        <!-- PARAGRAPH ------------------------------->
+        <div class="paragraph">
+          <p>I was ignoring my toolset. Unfortunately, I have not found an accurate way to diagnose whether I’m stuck because I’ve found a <em>’learning moment’</em> or if I’m ignoring my body’s limitations. The only chance I have of doing so in future, (let’s put it in a h1 tag so it really sinks in this time) is to:</p>
+        </div>
+        <!-- SUBTITLE --------------------------------->
+        <div class="subtitle">
+          <h1>Take breaks.<em></em></h1>
+        </div>
+        <!-- IMAGE --------------------------------->
+        <div class="paragraph-image">
+          <img src="/images/PS-1.jpg" alt="A hammer with some nails, screws, and springs">
+        </div>
+        <!-- SUBTITLE --------------------------------->
+        <div class="subtitle">
+          <h2>if (all you have is a hammer) {everything looks like a nail}<em></em></h2>
+        </div>
+        <!-- PARAGRAPH ------------------------------->
+        <div class="paragraph">
+          <p>During Kata 5 – Builtin Methods I found myself continuously trying to force a square peg through a round hole. Sprint-3 was still so fresh and top of mind that I was using loops, conditionals, and functions where there were specific object methods built to remove this burden.</p>
+        </div>
+        <!-- PARAGRAPH ------------------------------->
+        <div class="paragraph">
+          <p>In whereAreYou, this led to a function that returned <em>every</em> Scooby, rather than just the <em>first</em>. <a href="https://i.chzbgr.com/full/7688881920/h81F5B33E/programmers-always-have-problems-to-solve" target="_blank"> Why was my function not working??</a></p>
+        </div>
+        <!-- CODE --------------------------------------->
+        <div class="paragraph quote code">
+          <pre>
+            <code>
+              <p>
+                 1.  function whereAreYou(arrayOfObjects) {
+                 2.    for (i = 0; i < arrayOfObjects.length; i++) {
+                 3.      if (arrayOfObjects[i].hiding == 'Scooby') {
+                 4.        return arrayOfObjects
+                 5.      }
+                 6.    }
+                 7.  }
+              </p>
+            </code>
+          </pre>
+        </div>
+        <!-- PARAGRAPH ------------------------------->
+        <div class="paragraph">
+          <p>  
+            <a href="https://livecodestream.dev/post/programming-memes/1_hu04f127da47abcc75c8958c18739e45ec_1603421_700x0_resize_q90_h2_lanczos_3.webp" target="_blank">Frustrated</a>
+            I reached out for help. A fellow student gently pointed to the .find() requirement of the exercise. I had either skimmed the question or totally skipped it, jumping into the index.test instead. After researching the method, why was I trying to use a loop anyway? 
           </p>
         </div>
         <!-- CODE --------------------------------------->
         <div class="paragraph quote code">
+          <pre>
+            <code>
+              <p>
+                 1.  function whereAreYou(arrayOfObjects) {
+                 2.    let result = arrayOfObjects.find(({ hiding }) => hiding === 'Scooby')
+                 3.    return result
+                 4.  }
+              </p>
+            </code>
+          </pre>
+        </div>
+        <!-- PARAGRAPH ------------------------------->
+        <div class="paragraph">
+          <p>Although, I’d still argue that finding <em>every</em> Scooby is more useful. After all, what’s better than one scoop of your favourite ice cream? Two scoops of your favourite ice cream. </p>
+        </div>
+        <!-- SUBTITLE --------------------------------->
+        <div class="subtitle">
+          <h2>deBuzz deezN*ts<em></em></h2>
+        </div>
+        <!-- PARAGRAPH ------------------------------->
+        <div class="paragraph">
+          <p>Often times, when I'm trying to take a break from coding I can't fully relax or be present in whatever activity is supposed to be helping me recuperate from the sometimes-intense focus of solving a small coding issue. I will find my mind drifting:</p>
+        </div>
+        <!-- QUOTE ------------------------------------------>
+        <div class="paragraph quote">
           <p>
-            &nbsp;1.&nbsp;&nbsp;<br>
-            &nbsp;2.&nbsp;&nbsp;<br>
-            &nbsp;3.&nbsp;&nbsp;<br>
-            &nbsp;4.&nbsp;&nbsp;<br>
-            &nbsp;5.&nbsp;&nbsp;<br>
-            &nbsp;6.&nbsp;&nbsp;<br>
-            &nbsp;7.&nbsp;&nbsp;<br>
-            &nbsp;8.&nbsp;&nbsp;<br>
-            &nbsp;9.&nbsp;&nbsp;<br>
-            10.&nbsp;&nbsp;<br>
+            <em>"would .filter() help here? Maybe .map()? Maybe that weird RegExp thing I read about on stackoverflow?"</em>
           </p>
+        </div>
+        <!-- PARAGRAPH ------------------------------->
+        <div class="paragraph">
+          <p>Whether I'm sitting at a cafe, drifting off to sleep, or cooking supper these potential solutions pick at me. With the Replit app I can quickly jot down an idea and refocus on unfocusing.</p>
+        </div>
+        <div class="paragraph">
+          <p>The Replit website may be useful for solving syntax issues, a missing pair of quotes or forgetting to add the word return at school, but I used the app to solve problems when I couldn't sit at my screen. I found it great for 'thinking outside of the box'. The human thumb has a limited bandwidth compared to a keyboard and a few monitors. Most of the kata's could be solved with only a few elegant lines of code and this limitation allowed me to break out of my habits of using loops and complicated if...else loops and think of smaller, more legible solutions.</p>
+        </div>
+        <div class="paragraph">
+          <p>I feel comfortable with all the suggested problem-solving techniques taught this week. That said, I’ve had my failings and when I hit a wall in future I’d do well to remember. Take breaks. Ask for help. Use every tool in the <a href="https://img.freepik.com/premium-photo/attractive-angry-computer-engineer-destroying-computer-with-hammer_13339-9472.jpg?w=1060" target="_blank">toolbox</a>.</p>
+        </div>
+        <!-- IMAGE --------------------------------->
+        <div class="paragraph-image">
+          <img src="/images/PS-3.jpg" alt="A tool set for, AND being operated by, babies">
+        </div>        
+        <!-- PARAGRAPH ------------------------------->
+        <div class="paragraph">
+          <p>P.S. If you’re reading this and you helped me out on campus or in the discord this week…</p>
+        </div>
+        <!-- SUBTITLE --------------------------------->
+        <div class="subtitle">
+          <h2>THANK YOU!<em></em></h2>
         </div>
       </section>
 
