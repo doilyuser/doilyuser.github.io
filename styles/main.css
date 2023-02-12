@@ -138,6 +138,11 @@ img {
   height: auto;
 }
 
+.banner-nine {
+  background-image: url(/images/blog-bw-15.jpg);
+  height: auto;
+}
+
 #blog {
   display: flex;
   align-items: flex-start;
