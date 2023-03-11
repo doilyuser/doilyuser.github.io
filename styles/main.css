@@ -143,6 +143,11 @@ img {
   height: auto;
 }
 
+.banner-ten {
+  background-image: url(/images/blog-bw-16.jpg);
+  height: auto;
+}
+
 #blog {
   display: flex;
   align-items: flex-start;
